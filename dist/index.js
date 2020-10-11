@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window);var t=$(".project-preview");t.each(function(){this.onloadeddata=function(){var t=$(this).siblings()[0];$(t).hide()},this.onpause=function(){this.pause(),$(this).css("pointer-events","auto")},this.onplay=function(){var i;this.play(),$(this).css("pointer-events","none"),i=this,t.each(function(){this!=i&&this.pause()})}})});

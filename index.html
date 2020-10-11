@@ -1,0 +1,407 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Augmented reality games and prototypes."/>
+  <meta name="keywords" content="VR, AR, XR, MR, virtual reality, augmented reality, software, games, protoypes, ARKit, ARCore, Oculus Quest">
+  <title>Proto XR - VR/AR Games & Prototypes</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="dist/index.css?v43">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <style>
+    .loader-container {
+      display: none;
+      background-color: #191919;
+      text-align: center;
+      display: flex;
+      justify-content: center; align-items: center;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+    }
+
+    .loader {
+      width: 3em;
+      height: 3em;
+      animation: loaderAnim 1.25s infinite;
+      outline: 1px solid transparent;
+      position: relative;
+    }
+    .loader .largeBox {
+      height: 3em;
+      width: 3em;
+      background-color: #ececec;
+      outline: 1px solid transparent;
+      position: absolute;
+    }
+    .loader .smallBox {
+      height: 3em;
+      width: 3em;
+      background-color: #191919;
+      position: absolute;
+      z-index: 1;
+      outline: 1px solid transparent;
+      animation: smallBoxAnim 1.25s alternate infinite ease-in-out;
+    }
+    @keyframes smallBoxAnim {
+      0% {
+        transform: scale(0.2);
+      }
+      100% {
+        transform: scale(0.75);
+      }
+    }
+    @keyframes loaderAnim {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <a class="logo" href="http://protoxr.com/"><b>/</b> PROTO XR <b>/</b></a>
+    </div>
+  </div>
+
+    <div class="hero-content">
+      <div class="video-container">
+        <div class="descriptive-content">
+          <h1>AR Games and Prototypes</h1>
+          <h2>ARKit and ARCore apps.</h2>
+        </div>
+
+        <iframe
+          src="https://www.youtube.com/embed/qHI0eBBXV-8?rel=0&showinfo=0&feature=oembed&vq=hd1080&hd=1"
+          width="1920" height="1080"
+          allow="encrypted-media"
+          allowfullscreen
+          frameborder="0" 
+        >
+        </iframe>
+      </div>
+    </div>
+
+  <div class="container">
+    <section class="projects-section">
+      <h3 class="section-header">&mdash; PROJECTS &mdash;</h3>
+
+      <article class="project" id="aim-xr">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largebox"></div>
+              <div class="smallbox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/aim-xr/aim-xr_video.mp4?v4" alt="Aim XR preview" class="project-preview" muted loop playsinline controls poster="assets/projects/aim-xr/aim-xr_poster.jpg?v4">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://sidequestvr.com/app/928">
+              / aim xr /
+            </a>
+          </h3>
+
+          <p>
+            Fast-paced VR shooter for the Oculus Quest.
+            <p class="project-links" style="margin-top: 0">
+              <a href="https://www.youtube.com/watch?v=JRb369czoG8" class="project-link">full video</a>
+            </p>
+          </p>
+
+          <p class="download-links">
+            <a href='https://sidequestvr.com/app/928' class="app-store-button">
+              <img alt='Download on SideQuest' src='assets/marketing/Get-it-on-SideQuest.png' style="width: 165px; margin-bottom: 6px;"/>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project" id="ar-space-fight">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/ar-space-fight/ar-space-fight_video.mp4?v2" alt="AR Space Fight Preview" class="project-preview" muted loop playsinline controls poster="assets/projects/ar-space-fight/ar-space-fight_poster.jpg?v2">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://www.youtube.com/watch?v=_pVeVmyOpLY">
+              / AR SPACE FIGHT /
+            </a>
+          </h3>
+
+          <p>
+            Simple AR space battle viewing experience. Made with ARKit and ARCore.
+          </p>
+
+          <p class="download-links">
+            <a href='https://itunes.apple.com/us/app/ar-space-fight/id1441001280?ls=1&mt=8' class="app-store-button">
+              <img alt='Download on the App Store' src='assets/marketing/app-store-button_300.png'/>
+            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.ProtoXR.ARSpaceFight&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="google-play-button">
+              <img alt='Get it on Google Play' src='assets/marketing/google-play-button_en.png'/>
+            </a>
+          </p>
+        </div>
+      </article> 
+
+      <article class="project" id="encamp">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/encamp/encamp_video.mp4?v8" alt="Encamp Preview" class="project-preview" muted loop playsinline controls poster="assets/projects/encamp/encamp_poster.jpg?v8">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://encampgame.com">
+              / ENCAMP /
+            </a>
+          </h3>
+
+          <p>
+            AR medieval-fantasy colony sim game. For iOS and Android.
+          </p>
+
+          <p class="project-links">
+            <a href="https://encampgame.com/video" class="project-link">FULL VIDEO</a>
+
+            <a href="https://encampgame.com" class="project-link">MORE INFO</a>
+          </p>
+        </div>
+      </article> 
+
+      <article class="project" id="ar-demon">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/ar-demon/ar-demon_video.mp4?v3" alt="AR Demon Preview" class="project-preview" muted loop playsinline controls poster="assets/projects/ar-demon/ar-demon_poster.jpg?v3">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://youtu.be/UR-KqF4uU_4">
+              / AR DEMON /
+            </a>
+          </h3>
+
+          <p>
+            Augmented reality RPG concept using ARKit and ARCore.
+          </p>
+
+          <p class="project-links">
+            <a href="https://youtu.be/UR-KqF4uU_4" class="project-link">FULL VIDEO</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project" id="ar-car-fight">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/ar-car-fight/ar-car-fight_video.mp4?v1" alt="AR Car Fight Preview" class="project-preview" muted loop playsinline controls poster="assets/projects/ar-car-fight/ar-car-fight_poster.jpg?v1">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="ar-car-fight">
+              / AR CAR FIGHT /
+            </a>
+          </h3>
+
+          <p>
+            AR car fighting game for iOS and Android.
+          </p>
+
+          <p class="project-links">
+            <a href="https://www.youtube.com/watch?v=0QvUugX5VxI" class="project-link">FULL VIDEO</a>
+          </p>
+        </div>
+      </article>
+
+      <!--
+      <article class="project" id="web-ar">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/webar-demo/web-ar-demo_video.mp4?v1" alt="Web AR Demo Preview" class="project-preview" muted loop playsinline controls poster="assets/projects/webar-demo/web-ar-demo_poster.jpg?v1">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://webar.protoxr.com/">
+              / WEB AR DEMO /
+            </a>
+          </h3>
+
+          <p>
+            Multiplayer chatroom demo using Web AR.
+          </p>
+          <p>
+            Requires a Web AR browser.
+          </p>
+
+          <p class="project-links">
+            <a href="https://youtu.be/r6Sw-LRWr28" class="project-link">FULL VIDEO</a>
+
+            <a href="https://webar.protoxr.com" class="project-link">TRY DEMO</a>
+          </p>
+        </div>
+      </article>
+      -->
+
+      <!--
+      <article class="project" id="ar-zombie-survival">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largebox"></div>
+              <div class="smallbox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/ar-zombie-survival/ar-zombie-survival_video.mp4?v2" alt="zombie mountain preview" class="project-preview" muted loop playsinline controls poster="assets/projects/ar-zombie-survival/ar-zombie-survival_poster.jpg?v2">
+          </video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://youtu.be/rzlbkbqsfme">
+              / zombie mountain /
+            </a>
+          </h3>
+
+          <p>
+            zombie survival game using arkit and arcore for positional tracking.
+          </p>
+
+          <p class="project-links">
+            <a href="https://youtu.be/rzlbkbqsfme" class="project-link">full video</a>
+          </p>
+        </div>
+      </article>
+      -->
+
+      <!--
+      <article class="project" id="mobile-vr-shooter">
+        <div class="video-cropper">
+          <div class="loader-container">
+            <div class="loader">
+              <div class="largeBox"></div>
+              <div class="smallBox"></div>
+            </div>
+          </div>
+          <video src="assets/projects/mobile-vr-shooter/mobile-vr-shooter_video.mp4" alt="Mobile VR Shooter Preview" class="project-preview" muted loop controls playsinline poster="assets/projects/mobile-vr-shooter/mobile-vr-shooter_poster.jpg?v1"></video>
+        </div>
+
+        <div class="project-container">
+          <h3 class="project-header">
+            <a href="https://www.youtube.com/watch?v=FGpiTk7b48g">/ MOBILE VR SHOOTER /</a>
+          </h3>
+
+          <p>
+            Multiplayer mobile VR shooter for Google Daydream. Project discontinued.
+          </p>
+
+          <p>
+          </p>
+
+          <p class="project-links">
+            <a href="https://www.youtube.com/watch?v=FGpiTk7b48g" class="project-link">
+              FULL VIDEO
+            </a>
+          </p>
+        </div>
+      </article>
+    -->
+
+    </section>
+
+    <footer>
+      <div class="about-slant"></div>
+
+      <div class="about-text">
+        <p>Looking for an VR/AR app developer?</p>
+        <p>
+          Let's <a class="get-in-touch" href="mailto:contact@protoxr.com">get in touch</a>!
+        </p>
+      </div>
+
+      <ul id="links">
+        <li>
+          <a class="email" href="https://www.youtube.com/channel/UCDreewBbVAuj4yLvbbCXbCA">
+            <img src="assets/icons/icon_youtube.png" style="width: 21px;" />
+          </a>
+        </li>
+        <li class="list-dot"></li>
+        <li>
+          <a class="email" href="https://twitter.com/protoxr">
+            <img src="assets/icons/icon_twitter.png" style="width: 22px;" />
+          </a>
+        </li>
+        <li class="list-dot"></li>
+        <li>
+          <a class="email" href="mailto:contact@protoxr.com">
+            <img src="assets/icons/icon_contact.png" style="width: 24px;" />
+
+
+          </a>
+        </li>
+      </ul>
+
+      <span class="copyright">&copy;<span class="copyright-numbers">2020</span> PROTO XR</span>
+
+    </footer>
+  </div>
+
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.3/bowser.js"></script>
+  <script src="dist/index.js?v2"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111138188-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111138188-1');
+  </script>
+</body>

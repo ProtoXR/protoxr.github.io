@@ -1,37 +1,63 @@
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Augmented reality games and prototypes."/>
-  <meta name="keywords" content="VR, AR, XR, MR, virtual reality, augmented reality, software, games, protoypes, ARKit, ARCore, Oculus Quest">
-  <title>Proto XR - VR/AR Games & Prototypes</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="dist/index.css?v44">
-  <link rel="shortcut icon" href="favicon.ico" />
+  <title>IMU Test with Oculus Quest — Proto XR</title>
+  <meta name="description" content="Prototype: an MPU-9250 IMU streams orientation to an Oculus Quest app over TCP.">
+  <meta name="theme-color" content="#06080b">
+  <link rel="icon" href="favicon.ico?v3" sizes="any">
+  <link rel="icon" href="favicon.svg?v3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v2">
 </head>
 
-<body class="container imu-test">
-  <div>
-    <h1>IMU Test with Oculus Quest</h1>
+<body>
+  <header class="nav is-scrolled">
+    <div class="container nav-inner">
+      <a class="logo" href="/" aria-label="Proto XR home">
+        <span class="logo-slash">/</span> PROTO XR <span class="logo-slash">/</span>
+      </a>
+    </div>
+  </header>
 
-    <p>
-      For this prototype, an MPU-9250 IMU is used to determine orientation. Data is sent to an Oculus Quest app over a TCP server.
-    </p>
-    <p>
-      By pressing the blue button on the controller, menu items are spawned when the controller's projected spawn point is a sufficient distance from the already-spawned items.
-    </p>
-    <p>
-      By pressing the yellow button on the controller, the controller is positioned relative to the current camera orientation.
-    </p>
+  <main class="page">
+    <div class="container">
+      <p class="tagline">Prototype</p>
+      <h1 class="page-title">IMU test with Oculus Quest</h1>
 
-    <section>
-      <a href="https://github.com/andrelevi/imu-tests">GitHub Repo</a>
-    </section>
+      <div class="prose">
+        <p>
+          For this prototype, an MPU-9250 IMU is used to determine orientation.
+          Data is sent to an Oculus Quest app over a TCP server.
+        </p>
+        <p>
+          By pressing the blue button on the controller, menu items are spawned when the
+          controller's projected spawn point is a sufficient distance from the already-spawned items.
+        </p>
+        <p>
+          By pressing the yellow button on the controller, the controller is positioned
+          relative to the current camera orientation.
+        </p>
+      </div>
 
-    <section>
-      <video src="assets/projects/imu-test/imu-test_video.mp4?v1" alt="IMU test video" class="imu-test-video" muted loop playsinline controls>
-    </section>
+      <div class="hero-actions">
+        <a class="btn btn-ghost" href="https://github.com/andrelevi/imu-tests">GitHub repo <span aria-hidden="true">↗</span></a>
+      </div>
 
-    <section>
-      <img src="assets/projects/imu-test/imu-test_picture.jpg?v1" alt="IMU test picture" class="im-test-picture">
-    </section>
-  </div>
+      <div class="page-media">
+        <div class="frame">
+          <video src="assets/projects/imu-test/imu-test_video.mp4?v1" muted loop playsinline controls
+                 preload="metadata" aria-label="IMU test video"></video>
+        </div>
+        <div class="frame">
+          <img src="assets/projects/imu-test/imu-test_picture.jpg?v1" alt="The IMU controller prototype" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+</html>
